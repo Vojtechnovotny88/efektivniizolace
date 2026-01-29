@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efektivní izolace | Foukaná izolace za 350 Kč/m²</title>
+    <meta name="description" content="Profesionální foukaná minerální izolace střech a půd. Akční cena 350 Kč/m² včetně materiálu, práce a dopravy. Platba až po dokončení.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'display': ['Plus Jakarta Sans', 'sans-serif'],
+                        'body': ['DM Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        'forest': {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        },
+                        'ocean': {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            font-family: 'DM Sans', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6, .font-display {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #0c4a6e 0%, #166534 50%, #14532d 100%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #22c55e 0%, #0ea5e9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-gradient {
+            background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(240,253,244,0.9) 100%);
+        }
+        
+        .price-badge {
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+            box-shadow: 0 10px 40px rgba(34, 197, 94, 0.4);
+        }
+        
+        .glow {
+            box-shadow: 0 0 60px rgba(34, 197, 94, 0.3);
+        }
+        
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0;
+        }
+        
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        
+        .slide-up {
+            animation: slideUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        @keyframes slideUp {
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-500 { animation-delay: 0.5s; }
+        
+        .pattern-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2322c55e' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .noise-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.02;
+            z-index: 1000;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)'/%3E%3C/svg%3E");
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(34, 197, 94, 0.4);
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .step-card {
+            position: relative;
+        }
+        
+        .step-card::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -2rem;
+            width: 4rem;
+            height: 2px;
+            background: linear-gradient(90deg, #22c55e, transparent);
+        }
+        
+        .step-card:last-child::after {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .step-card::after {
+                display: none;
+            }
+        }
+        
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #22c55e;
+            box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-white antialiased">
+    <div class="noise-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-forest-500 to-ocean-600 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                        </svg>
+                    </div>
+                    <span class="font-display font-bold text-xl text-gray-900">Efektivní<span class="text-forest-600">izolace</span></span>
+                </div>
+                <a href="tel:+420555222463" class="cta-button text-white px-5 py-2.5 rounded-xl font-semibold flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                    <span class="hidden sm:inline">Zavolejte nám</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen gradient-bg overflow-hidden pt-20">
+        <div class="absolute inset-0 pattern-bg opacity-30"></div>
+        
+        <!-- Decorative elements -->
+        <div class="absolute top-1/4 left-10 w-64 h-64 bg-forest-400/20 rounded-full blur-3xl float-animation"></div>
+        <div class="absolute bottom-1/4 right-10 w-96 h-96 bg-ocean-400/20 rounded-full blur-3xl float-animation" style="animation-delay: -3s;"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6 slide-up">
+                        <span class="w-2 h-2 bg-forest-400 rounded-full animate-pulse"></span>
+                        <span class="text-white/90 text-sm font-medium">Akční nabídka — ušetřete 53%</span>
+                    </div>
+                    
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white leading-tight mb-6 slide-up delay-100">
+                        Foukaná izolace
+                        <span class="block text-forest-300">za nejlepší cenu</span>
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-white/80 mb-8 max-w-xl mx-auto lg:mx-0 slide-up delay-200">
+                        Profesionální zateplení střech a půd minerální vlnou. Rychlá realizace, platba až po dokončení práce.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start slide-up delay-300">
+                        <a href="#kontakt" class="cta-button text-white px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-2">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                            </svg>
+                            Nezávazná poptávka
+                        </a>
+                        <a href="tel:+420555222463" class="bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-2 hover:bg-white/20 transition-all">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            +420 555 222 463
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Price Card -->
+                <div class="flex justify-center lg:justify-end slide-up delay-400">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-forest-500/30 blur-3xl rounded-full"></div>
+                        <div class="relative card-gradient rounded-3xl p-8 md:p-10 shadow-2xl glow max-w-md">
+                            <div class="absolute -top-4 -right-4 bg-red-500 text-white font-bold px-4 py-2 rounded-full text-sm shadow-lg transform rotate-12">
+                                SLEVA 53%
+                            </div>
+                            
+                            <div class="text-center mb-6">
+                                <p class="text-gray-500 font-medium mb-2">Akční cena za m²</p>
+                                <div class="flex items-center justify-center gap-4">
+                                    <span class="text-3xl text-gray-400 line-through">750 Kč</span>
+                                    <span class="font-display text-6xl md:text-7xl font-extrabold gradient-text">350 Kč</span>
+                                </div>
+                            </div>
+                            
+                            <div class="border-t border-gray-200 pt-6 space-y-4">
+                                <p class="font-display font-bold text-gray-800 text-lg text-center mb-4">V ceně je zahrnuto:</p>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-forest-100 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5 text-forest-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-gray-700">Vrstva minerální vlny <strong>30 cm</strong></span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-forest-100 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5 text-forest-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-gray-700">Veškerý <strong>materiál</strong></span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-forest-100 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5 text-forest-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-gray-700">Kompletní <strong>práce a montáž</strong></span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-forest-100 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5 text-forest-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-gray-700"><strong>Doprava</strong> po celé ČR</span>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-8 p-4 bg-ocean-50 rounded-2xl border border-ocean-200">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-ocean-500 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-ocean-800">Platba na místě v den realizace</p>
+                                        <p class="text-sm text-ocean-600">Neplatíte žádné zálohy předem</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Wave divider -->
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="vyhody" class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block bg-forest-100 text-forest-700 font-semibold px-4 py-2 rounded-full text-sm mb-4">Proč foukaná izolace?</span>
+                <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    Výhody, které <span class="gradient-text">oceníte</span>
+                </h2>
+                <p class="text-lg text-gray-600">
+                    Foukaná minerální izolace je nejefektivnější způsob zateplení střech a půdních prostor. Přináší okamžité úspory a dlouhodobý komfort.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div class="feature-card bg-gradient-to-br from-white to-forest-50 rounded-3xl p-8 border border-forest-100">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-forest-500 to-forest-600 flex items-center justify-center mb-6 shadow-lg shadow-forest-500/30">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-gray-900 mb-3">Úspora na vytápění</h3>
+                    <p class="text-gray-600">Snižte náklady na vytápění až o 40%. Kvalitní izolace zabraňuje úniku tepla střechou, která je zodpovědná za největší tepelné ztráty domu.</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="feature-card bg-gradient-to-br from-white to-ocean-50 rounded-3xl p-8 border border-ocean-100">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-ocean-500 to-ocean-600 flex items-center justify-center mb-6 shadow-lg shadow-ocean-500/30">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-gray-900 mb-3">Příjemné klima v létě</h3>
+                    <p class="text-gray-600">Izolace chrání před přehříváním v letních měsících. Váš dům zůstane příjemně chladný i v největších vedrech.</p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="feature-card bg-gradient-to-br from-white to-forest-50 rounded-3xl p-8 border border-forest-100">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-forest-500 to-ocean-500 flex items-center justify-center mb-6 shadow-lg shadow-forest-500/30">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-gray-900 mb-3">Rychlá realizace</h3>
+                    <p class="text-gray-600">Celý proces trvá pouze několik hodin. Běžný rodinný dům zateplíme za jeden pracovní den, bez nutnosti dlouhých stavebních prací.</p>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="feature-card bg-gradient-to-br from-white to-ocean-50 rounded-3xl p-8 border border-ocean-100">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-ocean-500 to-forest-500 flex items-center justify-center mb-6 shadow-lg shadow-ocean-500/30">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-gray-900 mb-3">Bez nepořádku</h3>
+                    <p class="text-gray-600">Materiál foukáme speciální hadicí přímo na místo. Žádné řezání, žádný odpad ve vašem domě.</p>
+                </div>
+                
+                <!-- Benefit 5 -->
+                <div class="feature-card bg-gradient-to-br from-white to-forest-50 rounded-3xl p-8 border border-forest-100">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-forest-600 to-forest-500 flex items-center justify-center mb-6 shadow-lg shadow-forest-500/30">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-gray-900 mb-3">Ekologický materiál</h3>
+                    <p class="text-gray-600">Používáme minerální vlnu z recyklovaného skla. Materiál je nehořlavý, odolný plísním a šetrný k životnímu prostředí.</p>
+                </div>
+                
+                <!-- Benefit 6 -->
+                <div class="feature-card bg-gradient-to-br from-white to-ocean-50 rounded-3xl p-8 border border-ocean-100">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-ocean-600 to-ocean-500 flex items-center justify-center mb-6 shadow-lg shadow-ocean-500/30">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-gray-900 mb-3">Dokonalé pokrytí</h3>
+                    <p class="text-gray-600">Foukaná izolace vyplní každou skulinu a nepravidelnost. Žádné tepelné mosty, žádné mezery, dokonalá souvislá vrstva.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="cena" class="py-20 md:py-28 bg-gray-50 pattern-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block bg-forest-100 text-forest-700 font-semibold px-4 py-2 rounded-full text-sm mb-4">Transparentní ceny</span>
+                <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    Co všechno <span class="gradient-text">dostanete</span>
+                </h2>
+                <p class="text-lg text-gray-600">
+                    Žádné skryté poplatky. Cena 350 Kč/m² zahrnuje kompletní servis od A do Z.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+                    <div class="gradient-bg p-8 md:p-12 text-center">
+                        <p class="text-white/80 text-lg mb-2">Akční cena za m²</p>
+                        <div class="flex items-center justify-center gap-4 mb-4">
+                            <span class="text-3xl text-white/50 line-through">750 Kč</span>
+                            <span class="font-display text-6xl md:text-8xl font-extrabold text-white">350 Kč</span>
+                        </div>
+                        <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
+                            <svg class="w-5 h-5 text-forest-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span class="text-white font-medium">Časově omezená nabídka</span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8 md:p-12">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-forest-100 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-forest-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-display font-bold text-gray-900 mb-1">Minerální vlna 30 cm</h4>
+                                    <p class="text-gray-600 text-sm">Kvalitní foukaná izolace s vynikajícími tepelnými vlastnostmi</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-ocean-100 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-ocean-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-display font-bold text-gray-900 mb-1">Veškerý materiál</h4>
+                                    <p class="text-gray-600 text-sm">Kompletní izolační materiál pro realizaci</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-forest-100 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-forest-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-display font-bold text-gray-900 mb-1">Profesionální práce</h4>
+                                    <p class="text-gray-600 text-sm">Zkušený tým s mnohaletou praxí a špičkovým vybavením</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-ocean-100 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-ocean-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-display font-bold text-gray-900 mb-1">Doprava</h4>
+                                    <p class="text-gray-600 text-sm">Realizujeme zakázky po celé České republice</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-10 p-6 bg-gradient-to-r from-forest-50 to-ocean-50 rounded-2xl border border-forest-200">
+                            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center">
+                                        <svg class="w-8 h-8 text-forest-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-display font-bold text-gray-900 text-lg">Platba na místě v den realizace</h4>
+                                        <p class="text-gray-600">Neplatíte žádné zálohy předem. Případné příplatkové práce (lávky, zaklopení) účtujeme zvlášť.</p>
+                                    </div>
+                                </div>
+                                <a href="#kontakt" class="cta-button text-white px-6 py-3 rounded-xl font-bold whitespace-nowrap">
+                                    Objednat nyní
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section id="postup" class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block bg-ocean-100 text-ocean-700 font-semibold px-4 py-2 rounded-full text-sm mb-4">Jednoduchý proces</span>
+                <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    Jak to <span class="gradient-text">funguje</span>
+                </h2>
+                <p class="text-lg text-gray-600">
+                    Od prvního kontaktu po hotovou izolaci. Celý proces je rychlý, transparentní a bez starostí.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="step-card text-center">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-forest-500 to-forest-600 flex items-center justify-center shadow-lg shadow-forest-500/30">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-white border-4 border-forest-500 flex items-center justify-center font-display font-bold text-forest-600">1</div>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-gray-900 mb-3">Telefonická konzultace</h3>
+                    <p class="text-gray-600">Zavolejte nám nebo vyplňte formulář. Probereme vaše potřeby a zodpovíme dotazy.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="step-card text-center">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-ocean-500 to-ocean-600 flex items-center justify-center shadow-lg shadow-ocean-500/30">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                            </svg>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-white border-4 border-ocean-500 flex items-center justify-center font-display font-bold text-ocean-600">2</div>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-gray-900 mb-3">Zaměření a nabídka</h3>
+                    <p class="text-gray-600">Přijedeme k vám, zaměříme prostor a připravíme přesnou cenovou nabídku bez závazků.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="step-card text-center">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-forest-500 to-ocean-500 flex items-center justify-center shadow-lg shadow-forest-500/30">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-white border-4 border-forest-500 flex items-center justify-center font-display font-bold text-forest-600">3</div>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-gray-900 mb-3">Realizace</h3>
+                    <p class="text-gray-600">V dohodnutý termín provedeme izolaci. Většinu domů zvládneme za jeden den.</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="step-card text-center">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-ocean-500 to-forest-500 flex items-center justify-center shadow-lg shadow-ocean-500/30">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-white border-4 border-ocean-500 flex items-center justify-center font-display font-bold text-ocean-600">4</div>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-gray-900 mb-3">Platba na místě</h3>
+                    <p class="text-gray-600">Platíte přímo na místě v den realizace. Žádné zálohy předem, žádné faktury na splátky.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="py-20 md:py-28 gradient-bg relative overflow-hidden">
+        <div class="absolute inset-0 pattern-bg opacity-20"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+                    Proč nám můžete <span class="text-forest-300">důvěřovat</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20 text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-3">Platba na místě</h3>
+                    <p class="text-white/80">Nevyžadujeme žádné zálohy předem. Platíte přímo na místě v den realizace.</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20 text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-3">Profesionální tým</h3>
+                    <p class="text-white/80">Zkušení pracovníci se špičkovým vybavením. Stovky spokojených zákazníků.</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20 text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-3">Transparentní cena</h3>
+                    <p class="text-white/80">Žádné skryté poplatky. Cena uvedená v nabídce je konečná včetně všeho.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="py-20 md:py-28 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block bg-forest-100 text-forest-700 font-semibold px-4 py-2 rounded-full text-sm mb-4">Kontaktujte nás</span>
+                <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    Nezávazná <span class="gradient-text">poptávka</span>
+                </h2>
+                <p class="text-lg text-gray-600">
+                    Zavolejte nám nebo vyplňte formulář. Ozveme se vám do 24 hodin s nabídkou.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <!-- Contact Info -->
+                <div>
+                    <div class="bg-white rounded-3xl p-8 shadow-xl mb-8">
+                        <h3 class="font-display text-2xl font-bold text-gray-900 mb-6">Kontaktní údaje</h3>
+                        
+                        <a href="tel:+420555222463" class="flex items-center gap-4 p-4 rounded-2xl bg-forest-50 hover:bg-forest-100 transition-colors mb-4 group">
+                            <div class="w-14 h-14 rounded-xl bg-forest-500 flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 mb-1">Zavolejte nám</p>
+                                <p class="font-display text-xl font-bold text-gray-900">+420 555 222 463</p>
+                            </div>
+                        </a>
+                        
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-gray-50">
+                            <div class="w-14 h-14 rounded-xl bg-gray-400 flex items-center justify-center">
+                                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 mb-1">Web</p>
+                                <p class="font-display text-xl font-bold text-gray-900">www.efektivniizolace.cz</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-forest-500 to-ocean-600 rounded-3xl p-8 text-white">
+                        <h3 class="font-display text-xl font-bold mb-4">Proč právě teď?</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3">
+                                <svg class="w-6 h-6 text-forest-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Akční cena 350 Kč/m² je časově omezená</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <svg class="w-6 h-6 text-forest-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Ušetříte na vytápění již tuto zimu</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <svg class="w-6 h-6 text-forest-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Volné termíny se rychle plní</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl">
+                    <h3 class="font-display text-2xl font-bold text-gray-900 mb-6">Poptávkový formulář</h3>
+                    
+                    <form action="https://formspree.io/f/xaqjoqpl" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Jméno a příjmení *</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-forest-500 transition-colors">
+                        </div>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Telefon *</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-forest-500 transition-colors">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">E-mail</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-forest-500 transition-colors">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="city" class="block text-sm font-medium text-gray-700 mb-2">Město / Obec *</label>
+                            <input type="text" id="city" name="city" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-forest-500 transition-colors">
+                        </div>
+                        
+                        <div>
+                            <label for="area" class="block text-sm font-medium text-gray-700 mb-2">Odhadovaná plocha k izolaci (m²)</label>
+                            <input type="number" id="area" name="area" placeholder="např. 80" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-forest-500 transition-colors">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Zpráva</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Popište váš projekt nebo napište dotaz..." class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-forest-500 transition-colors resize-none"></textarea>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" id="gdpr" name="gdpr" required class="mt-1 w-5 h-5 rounded border-gray-300 text-forest-600 focus:ring-forest-500">
+                            <label for="gdpr" class="text-sm text-gray-600">
+                                Souhlasím se zpracováním osobních údajů za účelem vyřízení poptávky. *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="w-full cta-button text-white px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-2">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                            </svg>
+                            Odeslat poptávku
+                        </button>
+                        
+                        <p class="text-center text-sm text-gray-500">
+                            Odpovíme vám do 24 hodin. Žádné zálohy, žádné závazky.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-forest-500 to-ocean-600 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                        </svg>
+                    </div>
+                    <span class="font-display font-bold text-xl">Efektivní<span class="text-forest-400">izolace</span></span>
+                </div>
+                
+                <div class="flex items-center gap-6 text-gray-400">
+                    <a href="tel:+420555222463" class="hover:text-white transition-colors">+420 555 222 463</a>
+                    <span>|</span>
+                    <span>www.efektivniizolace.cz</span>
+                </div>
+                
+                <p class="text-gray-500 text-sm">
+                    © 2025 Efektivní izolace. Všechna práva vyhrazena.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA for mobile -->
+    <div class="fixed bottom-0 left-0 right-0 p-4 bg-white/90 backdrop-blur-md border-t border-gray-200 md:hidden z-50">
+        <a href="tel:+420555222463" class="cta-button text-white px-6 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-2 w-full">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+            Zavolejte nám: +420 555 222 463
+        </a>
+    </div>
+
+    <!-- Smooth scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
