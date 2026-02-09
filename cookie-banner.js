@@ -3,10 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
     cookieBanner.id = 'cookie-banner';
     cookieBanner.innerHTML = `
         <div class="cookie-content">
-            <p><strong>Používáme cookies</strong> 🍪 <br> Pro zlepšení webu a měření reklamy využíváme soubory cookies. Můžeme je používat?</p>
+            <p><strong>Vážíme si vašeho soukromí 🍪</strong></p>
+            <p>Používáme cookies k analýze návštěvnosti a pro personalizaci reklam. Váš souhlas nám pomůže web vylepšovat.</p>
             <div class="cookie-buttons">
-                <button id="cookie-reject" class="btn btn-outline-white btn-sm">Jen nezbytné</button>
-                <button id="cookie-accept" class="btn btn-white btn-sm">Souhlasím</button>
+                <button id="cookie-reject" class="btn btn-outline">Jen nezbytné</button>
+                <button id="cookie-accept" class="btn btn-primary">Souhlasím se vším</button>
             </div>
         </div>
     `;
@@ -45,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
