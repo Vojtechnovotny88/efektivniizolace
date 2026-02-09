@@ -214,6 +214,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 if (response.ok) {
+                    // Track Lead event for Facebook Pixel (Client-side)
+                    if (typeof fbq === 'function') {
+                        fbq('track', 'Lead');
+                    }
+
                     // Success handling
                     alert('Poptávka byla úspěšně odeslána. Děkujeme, brzy se vám ozveme.');
                     priceForm.reset();
@@ -234,4 +239,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
 
