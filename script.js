@@ -202,6 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Add source URL for debugging
             data.source_url = window.location.href;
+            data.user_agent = navigator.userAgent;
 
 
             try {
