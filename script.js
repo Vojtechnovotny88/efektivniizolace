@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hiddenPriceInput = document.getElementById('hidden-price');
 
     // Prices
-    const PRICE_INSULATION = 350; // Kč/m2
+    const PRICE_INSULATION = 399; // Kč/m2
     const PRICE_WALKWAY = 380;   // Kč/bm
     const PRICE_BOARDING = 580;  // Kč/m2
 
