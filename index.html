@@ -1,341 +1,502 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Efektivní izolace - Foukaná izolace na klíč</title>
-    <meta name="description"
-        content="Profesionální zateplení půdy a střechy foukanou izolací. Akční cena 399 Kč/m². Působíme v MSK, OLK, ZLK a JMK. Spočočítejte si cenu online!">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
-
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Efektivní izolace s.r.o. – foukaná kamenná izolace od 399 Kč/m² při vrstvě 30 cm, zateplení fasád systémem Baumit a vyřízení NZÚ Light i zvýhodněného úvěru. MSK, OLK, ZLK a JMK.">
+  <title>Efektivní izolace | Foukaná izolace, fasády a dotace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@450;500;650;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#obsah">Přejít na obsah</a>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">Efektivní<span class="highlight">izolace</span></a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+  <header class="site-header" aria-label="Hlavní navigace">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Efektivní izolace – úvod">
+        <img class="brand-mark" src="assets/logo-icon.webp" alt="" aria-hidden="true">
+        <span class="brand-name">
+          <span class="brand-name-line">Efektivní</span>
+          <span class="brand-name-line brand-name-accent">izolace</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navigace">
+        <a href="#sluzby">Služby</a>
+        <a href="#benefity">Proč my</a>
+        <a href="#proces">Jak to probíhá</a>
+        <a href="#dotace">Dotace a úvěr</a>
+        <a href="#parametry">Parametry</a>
+        <a href="#galerie">Realizace</a>
+      </nav>
+
+      <a class="button button-primary header-cta" href="#kontakt">Nezávazně poptat</a>
+
+      <button class="menu-button" type="button" aria-label="Otevřít menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+        <span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <div class="container mobile-menu-inner">
+        <a href="#sluzby">Služby</a>
+        <a href="#benefity">Proč my</a>
+        <a href="#proces">Jak to probíhá</a>
+        <a href="#dotace">Dotace a úvěr</a>
+        <a href="#parametry">Parametry</a>
+        <a href="#galerie">Realizace</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="obsah">
+    <section class="hero" id="top">
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/hero-foukana-izolace.webp" alt="">
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-inverse">ZATEPLENÍ DOMU • OSTRAVA + 4 KRAJE</p>
+          <h1>Zateplíme dům. Od půdy přes fasádu až po dotaci.</h1>
+          <p class="hero-lead">Foukaná kamenná izolace, fasádní systémy Baumit a kompletní pomoc s NZÚ Light i zvýhodněným úvěrem. Jedna firma pro technické řešení i administrativu.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#kontakt">Chci nezávaznou konzultaci</a>
+            <a class="button button-secondary-dark" href="#sluzby">Prohlédnout služby</a>
+          </div>
+
+          <div class="hero-price" aria-label="Ceny foukané izolace">
+            <div class="price-item">
+              <span class="price-value">od 299 Kč/m²</span>
+              <span class="price-note">tloušťka 20 cm</span>
             </div>
-            <ul class="nav-links">
-                <li><a href="#benefity">Proč my</a></li>
-                <li><a href="#postup">Jak to funguje</a></li>
-                <li><a href="#technicke-parametry">Parametry</a></li>
-                <li><a href="#galerie">Realizace</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-            <a href="#kalkulator" class="btn btn-primary nav-cta">Spočítat cenu</a>
+            <span class="price-rule" aria-hidden="true"></span>
+            <div class="price-item">
+              <span class="price-value">od 399 Kč/m²</span>
+              <span class="price-note">tloušťka 30 cm</span>
+            </div>
+          </div>
+          <p class="hero-price-note">Bez časově omezené „akce“. Cenu i rozsah prací si potvrdíme před realizací.</p>
         </div>
-    </nav>
+      </div>
+    </section>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container hero-container">
-            <div class="hero-text">
-                <h1>Zateplení půdy a střechy <br> foukanou izolací</h1>
-                <p class="hero-subtitle">Šetřete za energie ihned. Profesionální aplikace, materiál špičkové kvality.
-                </p>
-
-                <div class="hero-highlights">
-                    <div class="highlight-item price-highlight">
-                        <i class="fa-solid fa-tag"></i>
-                        <strong>399 Kč/m²</strong>
-                        <span>(tl. 30 cm)</span>
-                    </div>
-                    <div class="highlight-item security-highlight">
-                        <i class="fa-solid fa-shield-check"></i>
-                        <strong>0% záloha</strong>
-                        <span>Platíte až po realizaci</span>
-                    </div>
-                </div>
-
-                <div class="hero-buttons">
-                    <a href="#kalkulator" class="btn btn-primary btn-lg">Nezávazně spočítat cenu</a>
-                    <a href="#benefity" class="btn btn-secondary">Dozvědět se více</a>
-                </div>
-                <p class="hero-promo-date"><i class="fa-solid fa-calendar-check"></i> Akce platí do 11. 7. 2026</p>
-            </div>
-
-            <div class="hero-visual">
-                <div class="carousel-container">
-                    <div class="carousel-track" id="hero-carousel">
-                        <!-- JS will populate images 1.webp to 14.webp -->
-                    </div>
-                </div>
-            </div>
+    <section class="proof-rail" id="benefity" aria-labelledby="benefity-title">
+      <div class="container">
+        <div class="section-intro split-intro">
+          <div>
+            <p class="eyebrow">PROČ EFEKTIVNÍ IZOLACE</p>
+            <h2 id="benefity-title">Méně marketingu. Více konkrétních parametrů.</h2>
+          </div>
+          <p>U zateplení rozhoduje návrh, materiál a provedení. Proto ukazujeme cenu, technické parametry i postup práce dřív, než po vás chceme kontakt.</p>
         </div>
-    </header>
 
-    <!-- Content Placeholder -->
-    <main>
-
-        <!-- Benefits Section -->
-        <section id="benefity" class="section">
-            <div class="container">
-                <h2 class="section-title">Proč zvolit foukanou izolaci?</h2>
-                <div class="benefits-grid">
-                    <div class="benefit-card">
-                        <i class="fa-solid fa-temperature-arrow-down benefit-icon"></i>
-                        <h3>Okamžitá úspora</h3>
-                        <p>Snížíte náklady na vytápění až o 30 %. Návratnost investice je velmi rychlá.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <i class="fa-solid fa-clock benefit-icon"></i>
-                        <h3>Rychlá realizace</h3>
-                        <p>Zateplení běžného rodinného domu zvládneme během jednoho dne. Bez nepořádku.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <i class="fa-solid fa-shield-halved benefit-icon"></i>
-                        <h3>Požární bezpečnost</h3>
-                        <p>Materiál je nehořlavý (třída reakce na oheň A1). Chrání konstrukci domu.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Process Section -->
-        <section id="postup" class="section bg-light">
-            <div class="container">
-                <h2 class="section-title">Jak probíhá spolupráce?</h2>
-                <div class="process-steps">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <h3>Konzultace</h3>
-                        <p>Zavoláte nám nebo vyplníte formulář. Probereme vaše potřeby.</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <h3>Zaměření</h3>
-                        <p>Přijedeme, zaměříme prostory a navrhneme technické řešení.</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <h3>Realizace</h3>
-                        <p>Aplikujeme izolaci. Čistě, rychle a profesionálně.</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">4</div>
-                        <h3>Hotovo</h3>
-                        <p>Předáme vám hotové dílo a uklidíme po sobě.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technical Specs -->
-        <section id="technicke-parametry" class="section">
-            <div class="container">
-                <h2 class="section-title">Technické parametry materiálu</h2>
-                <p class="section-subtitle">Používáme prémiovou kamennou vlnu (granulát) pro maximální efektivitu.</p>
-
-                <div class="table-container">
-                    <table class="tech-table">
-                        <tbody>
-                            <tr>
-                                <td><strong>Typ produktu</strong></td>
-                                <td>Foukaná kamenná minerální vlna (granulát)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Použití</strong></td>
-                                <td>Izolace stropů a střech (nové i staré budovy)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Tepelná vodivost λD</strong></td>
-                                <td>0,034 – 0,037 W/mK</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Objemová hmotnost</strong></td>
-                                <td>≥ 40 – 70 kg/m³ (dle aplikace)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Reakce na oheň</strong></td>
-                                <td>A1 (nehořlavá)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Faktor difuzního odporu μ</strong></td>
-                                <td>1 (prodyšný materiál)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Teplota měknutí</strong></td>
-                                <td>Nad 1000 °C</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <!-- Calculator Section -->
-        <section id="kalkulator" class="section bg-light">
-            <div class="container">
-                <h2 class="section-title">Spočítejte si nezávaznou cenu</h2>
-                <div class="calculator-container">
-
-                    <!-- Cost Calculator -->
-                    <div class="calc-box">
-                        <h3><i class="fa-solid fa-calculator"></i> Kalkulace izolace</h3>
-                        <form id="price-form">
-
-                            <!-- Calculation Inputs -->
-                            <div class="input-group">
-                                <label for="area">Plocha zateplení (m²)</label>
-                                <input type="number" id="area" name="plocha" min="0" placeholder="Např. 100" required>
-                                <small>Cena: 399 Kč/m²</small>
-                            </div>
-
-                            <div class="input-group">
-                                <label for="walkway">Servisní lávka (bm)</label>
-                                <input type="number" id="walkway" name="lavka" min="0" placeholder="0">
-                                <small>Cena: 380 Kč/bm (šířka 62 cm)</small>
-                            </div>
-
-                            <div class="input-group">
-                                <label for="boarding">Záklop OSB (m²)</label>
-                                <input type="number" id="boarding" name="zaklop" min="0" placeholder="0">
-                                <small>Cena: 580 Kč/m² (pochozí)</small>
-                            </div>
-
-                            <div class="price-result">
-                                <span>Odhadovaná cena:</span>
-                                <span id="total-price" class="price-tag">0 Kč</span>
-                                <input type="hidden" id="hidden-price" name="odhadovana_cena">
-                            </div>
-
-                            <!-- Contact Details -->
-                            <div class="contact-details">
-                                <h4>Mám zájem o tuto nabídku</h4>
-                                <div class="input-group">
-                                    <label for="name">Jméno a příjmení</label>
-                                    <input type="text" id="name" name="jmeno" required placeholder="Jan Novák">
-                                </div>
-                                <div class="input-group">
-                                    <label for="phone">Telefon</label>
-                                    <input type="tel" id="phone" name="telefon" required placeholder="+420 777 888 999">
-                                </div>
-                                <div class="input-group">
-                                    <label for="email">E-mail</label>
-                                    <input type="email" id="email" name="email" required
-                                        placeholder="jan.novak@email.cz">
-                                </div>
-                                <div class="input-group">
-                                    <label for="note">Poznámka / Adresa</label>
-                                    <textarea id="note" name="poznamka" rows="3"
-                                        placeholder="Adresa realizace, specifické požadavky..."></textarea>
-                                </div>
-
-                                <div class="checkbox-group">
-                                    <input type="checkbox" id="consent" name="souhlas" required>
-                                    <label for="consent">Souhlasím s kontaktováním za účelem zaslání nabídky.</label>
-                                </div>
-
-                                <button type="submit" class="btn btn-primary btn-block">Odeslat nezávaznou
-                                    poptávku</button>
-                            </div>
-                        </form>
-                    </div>
-
-                    <!-- Savings Estimator -->
-                    <div class="savings-box">
-                        <h3><i class="fa-solid fa-piggy-bank"></i> Kolik ušetříte?</h3>
-                        <p>Zadejte své roční náklady na vytápění a zjistěte úsporu.</p>
-
-                        <div class="input-group">
-                            <label for="heating-cost">Současné roční náklady: <span id="heating-value">50 000</span>
-                                Kč</label>
-                            <input type="range" id="heating-cost" min="10000" max="150000" step="5000" value="50000">
-                        </div>
-
-                        <div class="savings-result">
-                            <p>Ročně můžete ušetřit až:</p>
-                            <span id="savings-amount" class="savings-tag">15 000 Kč</span>
-                            <small>(Odhad úspory 30 %)</small>
-                        </div>
-
-                        <div class="info-note">
-                            <p><i class="fa-solid fa-circle-info"></i> Skutečná úspora závisí na typu topení a stavu
-                                domu.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Gallery Section -->
-        <section id="galerie" class="section">
-            <div class="container">
-                <h2 class="section-title">Naše realizace</h2>
-                <div class="gallery-grid">
-                    <!-- Placeholders (User will replace with actual images) -->
-                    <div class="gallery-item">
-                        <div class="gallery-placeholder">Realizace 1</div>
-                        <!-- <img src="assets/realizace/img1.jpg" alt="Zateplení střechy"> -->
-                    </div>
-                    <div class="gallery-item">
-                        <div class="gallery-placeholder">Realizace 2</div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="gallery-placeholder">Realizace 3</div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="gallery-placeholder">Realizace 4</div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="gallery-placeholder">Realizace 5</div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="gallery-placeholder">Realizace 6</div>
-                    </div>
-                </div>
-                <p class="gallery-note">Další ukázky naší práce vám rádi zašleme nebo ukážeme při osobní konzultaci.</p>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="kontakt" class="section bg-primary text-white">
-            <div class="container">
-                <div class="contact-wrapper">
-                    <div class="contact-info">
-                        <h2>Kontaktujte nás</h2>
-                        <p>Jsme tu pro vás v regionech <strong>MSK, OLK, ZLK a JMK</strong>.</p>
-                        <ul class="contact-list">
-                            <li><i class="fa-solid fa-phone"></i> +420 555 444 384</li>
-                            <li><i class="fa-solid fa-envelope"></i> efektivniizolace@gmail.com</li>
-                            <li><i class="fa-solid fa-building"></i> Efektivní izolace s.r.o., IČO 19978502, sídlo: Ostravská 438, 735 41 Petřvald </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Efektivní izolace. Všechna práva vyhrazena.</p>
+        <div class="benefit-grid">
+          <article class="benefit-item">
+            <span class="benefit-index">01</span>
+            <strong>399 Kč/m²</strong>
+            <p>Foukaná izolace při vrstvě 30 cm.</p>
+          </article>
+          <article class="benefit-item">
+            <span class="benefit-index">02</span>
+            <strong>1 den</strong>
+            <p>Běžný rodinný dům zvládneme zpravidla během jednoho dne.</p>
+          </article>
+          <article class="benefit-item">
+            <span class="benefit-index">03</span>
+            <strong>A1</strong>
+            <p>Kamenná minerální vlna je nehořlavá.</p>
+          </article>
+          <article class="benefit-item">
+            <span class="benefit-index">04</span>
+            <strong>4 kraje</strong>
+            <p>MSK, OLK, ZLK a JMK.</p>
+          </article>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- Scripts -->
-    <script src="cookie-banner.js"></script>
-    <script src="script.js"></script>
+    <section class="services section" id="sluzby" aria-labelledby="sluzby-title">
+      <div class="container">
+        <div class="section-intro">
+          <p class="eyebrow">SLUŽBY</p>
+          <h2 id="sluzby-title">Tři části jedné renovace</h2>
+          <p class="lead">Nemusíte zvlášť řešit izolaci, fasádu a papírování kolem podpory. Umíme jednotlivé služby i jejich návaznost v rámci jedné rekonstrukce.</p>
+        </div>
+
+        <div class="service-list">
+          <article class="service-row">
+            <div class="service-image">
+              <img src="assets/sluzba-foukana-izolace.webp" alt="Aplikace foukané kamenné minerální izolace v podkroví">
+              <span class="service-number">01</span>
+            </div>
+            <div class="service-copy">
+              <p class="eyebrow">PŮDA A STŘECHA</p>
+              <h3>Foukaná kamenná izolace</h3>
+              <p>Rychlé zateplení stropu, půdy nebo střechy kamennou minerální vlnou. Materiál vyplní i hůře přístupná místa a nevytváří spáry jako skládané desky.</p>
+              <ul class="check-list">
+                <li>standardní cena 399 Kč/m² při vrstvě 30 cm</li>
+                <li>reakce na oheň A1 – nehořlavý materiál</li>
+                <li>λD 0,034–0,037 W/mK</li>
+                <li>realizace běžného domu zpravidla během jednoho dne</li>
+              </ul>
+              <a class="text-link" href="#parametry">Technické parametry <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="service-row service-row-reverse">
+            <div class="service-image">
+              <img src="assets/sluzba-fasada.webp" alt="Zateplování fasády rodinného domu z lešení">
+              <span class="service-number">02</span>
+            </div>
+            <div class="service-copy">
+              <p class="eyebrow">FASÁDY</p>
+              <h3>Zateplení fasád systémem Baumit</h3>
+              <p>Kompletní zateplení fasád rodinných domů a menších objektů. Zaměřujeme se na zakázky přibližně do 600 m², kde dokážeme uhlídat detail i návaznost prací.</p>
+              <ul class="check-list">
+                <li>ucelený fasádní systém Baumit</li>
+                <li>návrh vhodné skladby podle stavu objektu</li>
+                <li>rodinné domy a objekty přibližně do 600 m²</li>
+                <li>možnost návaznosti na dotační administrativu</li>
+              </ul>
+              <a class="text-link" href="#kontakt">Poptat fasádu <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="service-row">
+            <div class="service-image">
+              <img src="assets/sluzba-dotace.webp" alt="Konzultace rekonstrukce domu, financování a dotačních možností">
+              <span class="service-number">03</span>
+            </div>
+            <div class="service-copy">
+              <p class="eyebrow">DOTACE A FINANCOVÁNÍ</p>
+              <h3>NZÚ Light a zvýhodněný úvěr</h3>
+              <p>Prověříme, která cesta dává pro váš dům smysl, připravíme potřebné podklady a provedeme vás administrativou. Cílem není předat vám seznam formulářů, ale dotáhnout řešení až k realizaci.</p>
+              <ul class="check-list">
+                <li>prověření nároku a vhodného programu</li>
+                <li>podklady k žádosti a návaznost na Renovační pas NZÚ</li>
+                <li>pomoc s NZÚ Light pro nízkopříjmové domácnosti</li>
+                <li>pomoc se zvýhodněným úvěrem pro ostatní domácnosti</li>
+              </ul>
+              <a class="text-link" href="#dotace">Jak podpora funguje <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="subsidy section section-dark" id="dotace" aria-labelledby="dotace-title">
+      <div class="container">
+        <div class="section-intro split-intro split-intro-dark">
+          <div>
+            <p class="eyebrow eyebrow-inverse">NZÚ 2026</p>
+            <h2 id="dotace-title">Dotaci i úvěr vyřešíme s vámi</h2>
+          </div>
+          <p>Program má dvě odlišné cesty. Nízkopříjmové domácnosti mohou čerpat přímou podporu NZÚ Light, ostatní domácnosti mohou renovaci financovat zvýhodněným úvěrem s kompenzací úroků.</p>
+        </div>
+
+        <div class="subsidy-grid">
+          <article class="subsidy-card subsidy-card-accent">
+            <div class="subsidy-card-head">
+              <p class="eyebrow">NZÚ LIGHT</p>
+              <span class="status-tag">Nízkopříjmové domácnosti</span>
+            </div>
+            <div class="big-number">až 250 000 Kč</div>
+            <p class="big-number-label">celková podpora na zateplení</p>
+            <div class="data-list">
+              <div><span>Vnější stěny a střechy</span><strong>2 000 Kč/m²</strong></div>
+              <div><span>Strop pod nevytápěnou půdou</span><strong>750 Kč/m²</strong></div>
+              <div><span>Výplně otvorů</span><strong>8 000 Kč/m²</strong></div>
+              <div><span>Konstrukce k zemině</span><strong>2 000 Kč/m²</strong></div>
+            </div>
+            <p class="small-note">Minimální podpora v oblasti zateplení je 50 000 Kč. Skutečný nárok a výše podpory závisí na splnění podmínek programu a navrženém rozsahu opatření.</p>
+          </article>
+
+          <article class="subsidy-card">
+            <div class="subsidy-card-head">
+              <p class="eyebrow eyebrow-inverse">ZVÝHODNĚNÝ ÚVĚR</p>
+              <span class="status-tag status-dark">Pro renovace RD</span>
+            </div>
+            <div class="big-number big-number-inverse">až 2 000 000 Kč</div>
+            <p class="big-number-label inverse-muted">maximálně za všechny žádosti na nemovitost</p>
+            <div class="data-list data-list-dark">
+              <div><span>Dílčí opatření</span><strong>max. 750 000 Kč</strong></div>
+              <div><span>Úvěr do 500 000 Kč</span><strong>až 10 let</strong></div>
+              <div><span>Úvěr nad 500 000 Kč</span><strong>až 15 let</strong></div>
+              <div><span>Vybraná komplexní renovace</span><strong>až 25 let</strong></div>
+            </div>
+            <p class="small-note inverse-muted">Fond kompenzuje úroky a vybrané náklady úvěru v mezích programu. Samotné schválení úvěru a jeho konečnou výši posuzuje banka podle bonity žadatele.</p>
+          </article>
+        </div>
+
+        <div class="eligibility-grid">
+          <div class="eligibility-copy">
+            <p class="eyebrow eyebrow-inverse">KDO MŮŽE DOSÁHNOUT NA NZÚ LIGHT</p>
+            <h3>Nejde jen o věk nebo důchod</h3>
+            <p>Program je určen nízkopříjmovým domácnostem. Posuzuje se vlastnictví domu, příjem domácnosti, energetický stav budovy i majetkové podmínky.</p>
+          </div>
+          <div class="eligibility-points">
+            <div class="eligibility-point"><span>01</span><p>Žadatelem je fyzická osoba – vlastník podporované nemovitosti.</p></div>
+            <div class="eligibility-point"><span>02</span><p>Domácnost pobírá dávku jednotné sociální pomoci, nebo splní stanovená příjmová kritéria.</p></div>
+            <div class="eligibility-point"><span>03</span><p>Energetická náročnost domu musí být podle Renovačního pasu v třídě E až G.</p></div>
+            <div class="eligibility-point"><span>04</span><p>Platí i omezení dalšího vlastnictví nemovitostí a podmínky bydlení v podporovaném domě.</p></div>
+          </div>
+        </div>
+
+        <div class="subsidy-scope">
+          <div>
+            <p class="eyebrow eyebrow-inverse">CO LZE ŘEŠIT</p>
+            <h3>Podpora není jen na jednu položku</h3>
+          </div>
+          <div class="scope-tags" aria-label="Příklady podporovaných opatření">
+            <span>Zateplení</span>
+            <span>Okna a dveře</span>
+            <span>Zdroje tepla</span>
+            <span>Ohřev vody</span>
+            <span>Fotovoltaika</span>
+            <span>Řízené větrání</span>
+          </div>
+          <p class="small-note inverse-muted">Konkrétní podporovaná opatření se liší podle zvoleného režimu programu. Před podáním žádosti vždy ověřujeme aktuální podmínky a technickou vhodnost pro konkrétní dům.</p>
+        </div>
+
+        <div class="dotace-cta">
+          <div>
+            <strong>Nechcete studovat desítky stran podmínek?</strong>
+            <p>Pošlete nám základní informace o domě. Řekneme vám, která cesta dává smysl a co bude potřeba doložit.</p>
+          </div>
+          <a class="button button-primary" href="#kontakt">Prověřit možnosti podpory</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section" id="proces" aria-labelledby="proces-title">
+      <div class="container">
+        <div class="section-intro split-intro">
+          <div>
+            <p class="eyebrow">POSTUP</p>
+            <h2 id="proces-title">Od prvního kontaktu k hotovému domu</h2>
+          </div>
+          <p>U jednoduché foukané izolace je cesta krátká. U fasády nebo dotace přidáme potřebné zaměření a dokumentaci. Vždy víte, co je další krok.</p>
+        </div>
+
+        <ol class="timeline">
+          <li>
+            <span class="timeline-number">01</span>
+            <h3>Konzultace</h3>
+            <p>Telefonicky nebo formulářem zjistíme, co potřebujete a v jakém stavu je dům.</p>
+          </li>
+          <li>
+            <span class="timeline-number">02</span>
+            <h3>Zaměření a návrh</h3>
+            <p>Upřesníme plochy, skladbu, rozsah prací a případně dotační variantu.</p>
+          </li>
+          <li>
+            <span class="timeline-number">03</span>
+            <h3>Administrativa</h3>
+            <p>Je-li součástí zakázky dotace nebo úvěr, připravíme potřebné podklady a provedeme vás procesem.</p>
+          </li>
+          <li>
+            <span class="timeline-number">04</span>
+            <h3>Realizace a předání</h3>
+            <p>Provedeme domluvené práce, zkontrolujeme výsledek a předáme hotové dílo.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="technical section section-dark" id="parametry" aria-labelledby="parametry-title">
+      <div class="container">
+        <div class="technical-layout">
+          <div class="technical-copy">
+            <p class="eyebrow eyebrow-inverse">MATERIÁL</p>
+            <h2 id="parametry-title">Kamenná vlna. Parametry, které dávají smysl.</h2>
+            <p>Používáme foukanou kamennou minerální vlnu ve formě granulátu. Je nehořlavá, difuzně otevřená a díky aplikaci foukáním se dostane i do členitých míst.</p>
+            <img class="technical-image" src="assets/sluzba-foukana-izolace.webp" alt="Detail aplikace foukané kamenné minerální izolace mezi trámy">
+          </div>
+
+          <dl class="spec-grid">
+            <div class="spec spec-wide">
+              <dt>Tepelná vodivost λD</dt>
+              <dd>0,034–0,037 <span>W/mK</span></dd>
+              <p>Nižší hodnota znamená lepší tepelněizolační vlastnosti.</p>
+            </div>
+            <div class="spec">
+              <dt>Reakce na oheň</dt>
+              <dd>A1</dd>
+              <p>Nehořlavý materiál.</p>
+            </div>
+            <div class="spec">
+              <dt>Objemová hmotnost</dt>
+              <dd>40–70 <span>kg/m³</span></dd>
+              <p>Podle způsobu aplikace.</p>
+            </div>
+            <div class="spec">
+              <dt>Difuzní odpor μ</dt>
+              <dd>1</dd>
+              <p>Velmi dobře propouští vodní páru.</p>
+            </div>
+            <div class="spec">
+              <dt>Teplota měknutí</dt>
+              <dd>&gt; 1000 <span>°C</span></dd>
+              <p>Vysoká tepelná odolnost kamenné vlny.</p>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section" id="galerie" aria-labelledby="galerie-title">
+      <div class="container">
+        <div class="section-intro split-intro">
+          <div>
+            <p class="eyebrow">REALIZACE</p>
+            <h2 id="galerie-title">Práce, která je vidět v detailu</h2>
+          </div>
+          <p>Ukázky z reálných realizací – foukaná izolace půdy, zateplení fasády a izolace střešní konstrukce.</p>
+        </div>
+
+        <div class="project-grid">
+          <figure class="project-card project-card-large">
+            <div class="project-photo">
+              <img src="assets/realizace-02-fasada.webp" alt="Zateplení fasády rodinného domu systémem Baumit" loading="lazy">
+            </div>
+            <figcaption><span>Rodinný dům</span><strong>Fasádní systém</strong></figcaption>
+          </figure>
+          <figure class="project-card">
+            <div class="project-photo">
+              <img src="assets/realizace-01-pudy.webp" alt="Foukaná izolace půdy rodinného domu" loading="lazy">
+            </div>
+            <figcaption><span>Rodinný dům</span><strong>Půda / foukaná izolace</strong></figcaption>
+          </figure>
+          <figure class="project-card">
+            <div class="project-photo">
+              <img src="assets/realizace-03-strecha.webp" alt="Izolace střešní konstrukce rodinného domu" loading="lazy">
+            </div>
+            <figcaption><span>Rodinný dům</span><strong>Střecha / izolace</strong></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="kontakt" aria-labelledby="kontakt-title">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">NEZÁVAZNÁ POPTÁVKA</p>
+          <h2 id="kontakt-title">Řekněte nám, co chcete na domě řešit.</h2>
+          <p class="lead">Stačí pár údajů. Ozveme se, probereme stav domu a navrhneme další postup bez zbytečného kolečka kolem.</p>
+
+          <div class="contact-details">
+            <div>
+              <span>Telefon</span>
+              <a href="tel:+420799558004">+420 799 558 004</a>
+            </div>
+            <div>
+              <span>E-mail</span>
+              <a href="mailto:efektivniizolace@gmail.com">efektivniizolace@gmail.com</a>
+            </div>
+            <div>
+              <span>Působnost</span>
+              <p>Moravskoslezský, Olomoucký, Zlínský a Jihomoravský kraj</p>
+            </div>
+            <div>
+              <span>Firma</span>
+              <p>Efektivní izolace s.r.o.<br>IČO 19978502<br>Ostravská 438, 735 41 Petřvald</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/mjykwawv" method="post">
+          <div class="form-row">
+            <label for="jmeno">Jméno a příjmení</label>
+            <input id="jmeno" name="name" type="text" autocomplete="name" placeholder="Jan Novák" required>
+          </div>
+          <div class="form-split">
+            <div class="form-row">
+              <label for="telefon">Telefon</label>
+              <input id="telefon" name="phone" type="tel" autocomplete="tel" placeholder="+420 777 000 000" required>
+            </div>
+            <div class="form-row">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="jan@email.cz" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="poznamka">Co potřebujete řešit?</label>
+            <textarea id="poznamka" name="message" rows="5" placeholder="Např. foukaná izolace půdy cca 120 m², zateplení fasády nebo pomoc s dotací…"></textarea>
+          </div>
+          <label class="checkbox-row">
+            <input type="checkbox" name="consent" value="ano" required>
+            <span>Souhlasím se zpracováním údajů za účelem vyřízení této poptávky.</span>
+          </label>
+          <button class="button button-primary button-full" type="submit">Odeslat nezávaznou poptávku</button>
+          <p class="form-note">Kontaktní údaje použijeme pouze pro vyřízení poptávky.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="closing-cta" aria-label="Závěrečná výzva">
+      <div class="container closing-cta-inner">
+        <div>
+          <p class="eyebrow">ZAČNĚME KONKRÉTNĚ</p>
+          <h2>Izolace, fasáda nebo dotace?</h2>
+          <p>Pošlete nám pár informací o domě. Řekneme vám, jaký další krok dává smysl.</p>
+        </div>
+        <a class="button button-dark" href="#kontakt">Chci konzultaci</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-footer" href="#top" aria-label="Efektivní izolace – úvod">
+          <img class="brand-mark" src="assets/logo-icon.webp" alt="" aria-hidden="true">
+          <span class="brand-name">
+            <span class="brand-name-line">Efektivní</span>
+            <span class="brand-name-line brand-name-accent">izolace</span>
+          </span>
+        </a>
+        <p class="brand-tagline">Teplo · Úspora · Klid domova</p>
+        <p>Zateplení rodinných domů, fasády a administrace programu Nová zelená úsporám.</p>
+      </div>
+      <div>
+        <span class="footer-label">Služby</span>
+        <a href="#sluzby">Foukaná izolace</a>
+        <a href="#sluzby">Zateplení fasád</a>
+        <a href="#dotace">NZÚ Light a úvěr</a>
+      </div>
+      <div>
+        <span class="footer-label">Kontakt</span>
+        <a href="tel:+420799558004">+420 799 558 004</a>
+        <a href="mailto:efektivniizolace@gmail.com">efektivniizolace@gmail.com</a>
+        <p>Ostravská 438<br>735 41 Petřvald</p>
+      </div>
+      <div>
+        <span class="footer-label">Firma</span>
+        <p>Efektivní izolace s.r.o.<br>IČO 19978502</p>
+        <p>MSK • OLK • ZLK • JMK</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Efektivní izolace s.r.o.</p>
+      <div>
+        <a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a>
+        <a href="#" data-cookie-settings>Nastavení cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cookie-banner" aria-label="Nastavení cookies" data-cookie-banner hidden>
+    <p><strong>Vážíme si vašeho soukromí</strong> – používáme cookies k analýze návštěvnosti a pro personalizaci reklam. Souhlas nám pomůže web vylepšovat.</p>
+    <div>
+      <button class="button button-secondary-light" type="button" data-cookie-reject>Jen nezbytné</button>
+      <button class="button button-primary" type="button" data-cookie-accept>Souhlasím se vším</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
